@@ -1,0 +1,29 @@
+{
+  "name": "zai-api-wrapper",
+  "version": "1.0.0",
+  "description": "Comprehensive Z.AI API wrapper with rate limiting and caching",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.8.1",
+    "form-data": "^4.0.0",
+    "multer": "^1.4.5-lts.1", 
+    "node-cache": "^5.1.2",
+    "winston": "^3.10.0"
+  },
+  "devDependencies": {
+    "jest": "^29.6.1",
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
