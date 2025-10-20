@@ -7,7 +7,6 @@ class Diagnostic {
     try {
       logger.info('Testing Z.AI API connection...');
       
-      // اختبار الاتصال الأساسي
       const response = await axios.get(`${config.baseUrl}/v4/models`, {
         headers: {
           'Authorization': `Bearer ${config.apiKey}`,
@@ -96,7 +95,6 @@ class Diagnostic {
       endpoints: {}
     };
     
-    // اختبار جميع نقاط النهاية
     const endpoints = [
       '/v4/models',
       '/v4/chat/completions',

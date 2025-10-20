@@ -10,12 +10,10 @@ const logger = require('./utils/logger');
 
 const app = express();
 
-// إعدادات Middleware
 app.use(cors());
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true }));
 
-// إعداد Multer الآمن لرفع الملفات
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, path.join(__dirname, '../uploads'));
@@ -49,15 +47,12 @@ const upload = multer({
 
 app.use(upload.single('audio'));
 
-// المسارات
 app.use('/health', healthRoutes);
 app.use('/api', apiRoutes);
-app.use('/diagnostic', diagnosticRoutes); // إضافة مسارات التشخيص
+app.use('/diagnostic', diagnosticRoutes);
 
-// معالجة الأخطاء
 app.use(errorHandler);
 
-// معالجة المسارات غير الموجودة
 app.use('*', (req, res) => {
   res.status(404).json({ error: 'Endpoint not found' });
 });

@@ -5,7 +5,6 @@ const tokenTracker = require('../middleware/tokenTracker');
 
 router.get('/', async (req, res) => {
   try {
-    // فحص بسيط للاتصال بـ OpenAI
     await openaiService.listModels();
     
     res.json({
