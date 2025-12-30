@@ -129,6 +129,21 @@ MIT  see LICENSE for details.
 
 ---
 
+## 📚 Professional Design Documentation
+
+For comprehensive professional design, branding, and business documentation, see the [`docs/`](./docs/) directory. This includes:
+
+- **Company Profile** - Complete overview of services and capabilities
+- **Service Portfolio** - Detailed catalog with pricing for software, network, security, and printing services
+- **Branding Guidelines** - Professional brand identity standards
+- **Invoice Templates** - Professional invoice layouts for various services
+- **Design Assets Guide** - Specifications for all marketing materials
+- **Marketing Strategy** - Comprehensive marketing implementation guide
+
+[📖 View Complete Documentation Index](./docs/README.md)
+
+---
+
 If you want, I can also:
 
 - Add runnable examples under examples/ for common endpoints (chat, tts)
